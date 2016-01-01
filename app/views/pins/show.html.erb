@@ -8,7 +8,7 @@
 			</div>
 			<div class="panel-body">
 				<%= @pin.description %><br/>
-				<%= @pin.user.email if @pin.user %><br/>
+				<%= @pin.user.name if @pin.user %><br/>
 			
 				<% if @pin.user == current_user %>
 					 <%= link_to edit_pin_path(@pin) do %>
