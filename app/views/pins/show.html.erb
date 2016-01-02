@@ -10,7 +10,7 @@
 				<%= @pin.description %><br/>
 				<%= @pin.user.name if @pin.user %><br/>
 			
-				<% if @pin.user == current_user %>
+				<% if current_user && pin.user == current_user %>
 					 <%= link_to edit_pin_path(@pin) do %>
                      <span class="glyphicon glyphicon-edit"></span> Edit
                 <% end %>
